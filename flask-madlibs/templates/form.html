@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Madlibs</h1>
+    {% block content %}
+    <form action = "/story">
+    {% for item in lst %}
+        <input type = "text" placeholder = {{item}} name = {{item}}>
+    {%endfor%}
+    <button>Submit</button>
+    </form>
+    
+    {% endblock%}
+
+</body>
+</html>
